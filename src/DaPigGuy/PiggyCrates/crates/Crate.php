@@ -72,7 +72,6 @@ class Crate
 
     public function giveKey(Player $player, int $amount): void
     {
-        // $key = ItemFactory::getInstance()->get((int)$this->plugin->getConfig()->getNested("keys.id"), (int)$this->plugin->getConfig()->getNested("keys.meta"), $amount);
         $key = StringToItemParser::getInstance()->parse((string)$this->plugin->getConfig()->getNested("keys.itemName"));
         $key->setCount($amount);
         $key->setCustomName(ucfirst(str_replace("{CRATE}", $this->getName(), $this->plugin->getConfig()->getNested("keys.customName"))));
