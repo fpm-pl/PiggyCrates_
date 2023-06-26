@@ -88,7 +88,6 @@ class PiggyCrates extends PluginBase
                         $this->getLogger()->warning("Invalid crate item NBT supplied in crate type " . $crateName . ".");
                     }
                 }
-                // $item = ItemFactory::getInstance()->get($itemData["id"], $itemData["meta"], $itemData["amount"], $tags);
                 $item = StringToItemParser::getInstance()->parse($itemData["itemName"]);
                 $item->setCount($itemData["amount"]);
                 if ($tags !== null) $item->setNamedTag($tags);
