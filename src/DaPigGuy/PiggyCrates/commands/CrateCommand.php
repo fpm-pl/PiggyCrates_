@@ -14,7 +14,7 @@ use pocketmine\player\Player;
 class CrateCommand extends BaseCommand
 {
     /** @var PiggyCrates */
-    private PiggyCrates $plugin;
+    protected PiggyCrates $plugin;
 
     public function __construct(PiggyCrates $plugin) {
 		parent::__construct($plugin, "crate", "Create a crate");
