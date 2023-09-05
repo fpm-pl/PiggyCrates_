@@ -1,6 +1,6 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/fpm-pl/PiggyCrates_
 branches: 
-  - master
+  - pm5
 projects:
   PiggyCrates:
     path: ""
